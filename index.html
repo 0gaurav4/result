@@ -41,7 +41,67 @@
         <form class="form-login" method="post">
           <h2 class="form-login-heading">Enter Details Below</h2>
           <div class="login-wrap">
-            <input type="text" class="form-control" name="urollno" placeholder="University Roll Number" required="" autofocus="">
+            <select class="form-control" name="urollno" required="" autofocus="">
+              <option value="">University Roll Number</option>
+              <option value="1220259002">1220259002</option>
+              <option value="1220259003">1220259003</option>
+              <option value="1220259004">1220259004</option>
+              <option value="1220259005">1220259005</option>
+              <option value="1220259006">1220259006</option>
+              <option value="1220259007">1220259007</option>
+              <option value="1220259008">1220259008</option>
+              <option value="1220259009">1220259009</option>
+              <option value="12202590010">1220259010</option>
+              <option value="1220259011">1220259011</option>
+              <option value="1220259012">1220259012</option>
+              <option value="1220259014">1220259014</option>
+              <option value="1220259015">1220259015</option>
+              <option value="1220259016">1220259016</option>
+              <option value="1220259017">1220259017</option>
+              <option value="1220259018">1220259018</option>
+              <option value="1220259019">1220259019</option>
+              <option value="1220259020">1220259020</option>
+              <option value="1220259021">1220259021</option>
+              <option value="1220259022">1220259022</option>
+              <option value="1220259023">1220259023</option>
+              <option value="1220259024">1220259024</option>
+              <option value="1220259025">1220259025</option>
+              <option value="1220259026">1220259026</option>
+              <option value="1220259028">1220259028</option>
+              <option value="1220259029">1220259029</option>
+              <option value="1220259030">1220259030</option>
+              <option value="1220259031">1220259031</option>
+              <option value="1220259032">1220259032</option>
+              <option value="1220259033">1220259033</option>
+              <option value="1220259034">1220259034</option>
+              <option value="1220259035">1220259035</option>
+              <option value="1220259036">1220259036</option>
+              <option value="1220259037">1220259037</option>
+              <option value="1220259039">1220259039</option>
+              <option value="1220259040">1220259040</option>
+              <option value="1220259042">1220259042</option>
+              <option value="1220259043">1220259043</option>
+              <option value="1220259044">1220259044</option>
+              <option value="1220259045">1220259045</option>
+              <option value="1220259046">1220259046</option>
+              <option value="1220259047">1220259047</option>
+              <option value="1220259048">1220259048</option>
+              <option value="1220259050">1220259050</option>
+              <option value="1220259051">1220259051</option>
+              <option value="1220259053">1220259053</option>
+              <option value="1220259054">1220259054</option>
+              <option value="1220259055">1220259055</option>
+              <option value="1220259056">1220259056</option>
+              <option value="1220259057">1220259057</option>
+              <option value="1220259058">1220259058</option>
+              <option value="1220259059">1220259059</option>
+              <option value="1220259060">1220259060</option>
+              <option value="1220259061">1220259061</option>
+              <option value="1220259062">1220259062</option>
+              <option value="1220259063">1220259063</option>
+              <option value="1220259064">1220259064</option>
+              <option value="1220259065">1220259065</option>
+            </select>
             <br>
             <input type="text" class="form-control" name="name" placeholder="_"  autofocus="" maxlength="3" value="_" disabled>
             <br>
@@ -57,24 +117,7 @@
             
           </div>
           <!-- Modal -->
-          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title">Forgot Password ?</h4>
-                </div>
-                <div class="modal-body">
-                  <p>Enter your e-mail address below to reset your password.</p>
-                  <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
-                </div>
-                <div class="modal-footer">
-                  <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                  <button class="btn btn-theme" name="sbmt1" type="button">Submit</button>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <!-- modal -->
         </form>
       </div>
@@ -95,7 +138,7 @@
 document.querySelector('.form-login').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
 
-    var urollno = document.querySelector('input[name="urollno"]').value;
+    var urollno = document.querySelector('select[name="urollno"]').value;
     
     if (urollno === '1220259002') {
         window.location.href = './pages/1.html';
