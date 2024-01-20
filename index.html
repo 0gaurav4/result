@@ -42,7 +42,8 @@
           <h2 class="form-login-heading">Enter Details Below</h2>
           <div class="login-wrap">
             <select class="form-control" name="urollno" required="" autofocus="">
-              <option value="">University Roll Number</option>
+                <option value="">University Roll Number</option>
+                <option value="other">Other</option>
               <option value="1220259002">1220259002</option>
               <option value="1220259003">1220259003</option>
               <option value="1220259004">1220259004</option>
@@ -102,10 +103,11 @@
               <option value="1220259064">1220259064</option>
               <option value="1220259065">1220259065</option>
             </select>
+              <input type="text" class="form-control" name="customRollNumber" placeholder="Enter Roll Number" style="display: none;">
             <br>
-            <input type="text" class="form-control" name="name" placeholder="_"  autofocus="" maxlength="3" value="_" disabled>
+            <input type="text" class="form-control" name="name" placeholder="Student Name (First 3 Letters)"  autofocus="" maxlength="3" value="_" >
             <br>
-            <input type="text" class="form-control" name="mname" placeholder="_"  autofocus="" maxlength="3" value="_" disabled>
+            <input type="text" class="form-control" name="mname" placeholder="Mother Name (First 3 Letters)"  autofocus="" maxlength="3" value="_">
             <br>
             
           
@@ -122,6 +124,23 @@
         </form>
       </div>
     </div>
+
+
+    <script>
+      const selectElement = document.querySelector('select[name="urollno"]');
+      const customRollNumberInput = document.querySelector('input[name="customRollNumber"]');
+
+      selectElement.addEventListener('change', function() {
+        if (this.value === 'other') {
+          customRollNumberInput.style.display = 'block';
+          customRollNumberInput.setAttribute('required', 'required');
+        } else {
+          customRollNumberInput.style.display = 'none';
+          customRollNumberInput.removeAttribute('required');
+        }
+      });
+    </script>
+
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -143,119 +162,119 @@ document.querySelector('.form-login').addEventListener('submit', function(event)
     if (urollno === '1220259002') {
         window.location.href = './pages/1.html';
     } else if (urollno === '1220259003') {
-        window.location.href = './pages/1.html';
+        window.location.href = './pages/2.html';
     } else if (urollno === '1220259004') {
-      window.location.href = './pages/1.html';
+      window.location.href = './pages/3.html';
   } else if (urollno === '1220259005') {
-    window.location.href = './pages/1.html';
+    window.location.href = './pages/4.html';
 } else if (urollno === '1220259006') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/5.html';
 } else if (urollno === '1220259007') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/6.html';
 } else if (urollno === '1220259008') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/7.html';
 } else if (urollno === '1220259009') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/8.html';
 } else if (urollno === '12202590010') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/9.html';
 } else if (urollno === '1220259011') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/10.html';
 } else if (urollno === '1220259012') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/11.html';
 } else if (urollno === '1220259014') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/12.html';
 } else if (urollno === '1220259015') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/13.html';
 } else if (urollno === '1220259016') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/14.html';
 } else if (urollno === '1220259017') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/15.html';
 } else if (urollno === '1220259018') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/16.html';
 } else if (urollno === '1220259019') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/17.html';
 } else if (urollno === '1220259020') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/18.html';
 } else if (urollno === '1220259021') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/19.html';
 } else if (urollno === '1220259022') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/20.html';
 } else if (urollno === '1220259023') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/21.html';
 } else if (urollno === '1220259024') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/22.html';
 } else if (urollno === '1220259025') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/23.html';
 } else if (urollno === '1220259026') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/24.html';
 } else if (urollno === '1220259028') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/25.html';
 } else if (urollno === '1220259029') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/26.html';
 } else if (urollno === '1220259030') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/27.html';
 } else if (urollno === '1220259031') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/28.html';
 } else if (urollno === '1220259032') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/29.html';
 } else if (urollno === '1220259033') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/30.html';
 } else if (urollno === '1220259034') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/31.html';
 } else if (urollno === '1220259035') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/32.html';
 } else if (urollno === '1220259036') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/33.html';
 } else if (urollno === '1220259037') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/34.html';
 } else if (urollno === '1220259039') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/35.html';
 } else if (urollno === '1220259040') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/36.html';
 } else if (urollno === '1220259042') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/37.html';
 } else if (urollno === '1220259043') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/38.html';
 } else if (urollno === '1220259044') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/39.html';
 } else if (urollno === '1220259045') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/40.html';
 } else if (urollno === '1220259046') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/41.html';
 } else if (urollno === '1220259047') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/42.html';
 } else if (urollno === '1220259048') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/43.html';
 } else if (urollno === '1220259050') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/44.html';
 } else if (urollno === '1220259051') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/45.html';
 } else if (urollno === '1220259053') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/46.html';
 } else if (urollno === '1220259054') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/47.html';
 } else if (urollno === '1220259055') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/48.html';
 } else if (urollno === '1220259056') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/49.html';
 } else if (urollno === '1220259057') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/50.html';
 } else if (urollno === '1220259058') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/51.html';
 } else if (urollno === '1220259059') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/52.html';
 } else if (urollno === '1220259060') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/53.html';
 } else if (urollno === '1220259061') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/54.html';
 } else if (urollno === '1220259062') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/55.html';
 } else if (urollno === '1220259063') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/56.html';
 } else if (urollno === '1220259064') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/57.html';
 } else if (urollno === '1220259065') {
-  window.location.href = './pages/1.html';
+  window.location.href = './pages/58.html';
 }     else {
         window.location.href = './error.html';
     }
